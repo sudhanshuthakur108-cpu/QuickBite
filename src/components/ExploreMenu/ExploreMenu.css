@@ -1,0 +1,201 @@
+.explore-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 60px;
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+.explore-menu h1{
+    color: #1f2937;
+    font-weight: 700;
+    font-size: max(2.4vw,30px);
+    letter-spacing: -0.5px;
+    position: relative;
+    display: inline-block;
+}
+
+.explore-menu h1::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 65%;
+    height: 4px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,tomato,#ff8a65);
+}
+
+/* ========================= */
+/* DESCRIPTION */
+/* ========================= */
+
+.explore-menu-text{
+    max-width: 65%;
+    color: #6b7280;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+/* ========================= */
+/* MENU LIST */
+/* ========================= */
+
+.explore-menu-list{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+    margin: 25px 0px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 12px 4px;
+}
+
+.explore-menu-list::-webkit-scrollbar{
+    height: 6px;
+}
+
+.explore-menu-list::-webkit-scrollbar-thumb{
+    background: rgba(255,99,71,0.3);
+    border-radius: 20px;
+}
+
+/* ========================= */
+/* MENU ITEM */
+/* ========================= */
+
+.explore-menu-list-item{
+    min-width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.explore-menu-list-item:hover{
+    transform: translateY(-6px);
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+
+.explore-menu-list-item img{
+    width: 7.5vw;
+    min-width: 90px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    border: 4px solid transparent;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+}
+
+.explore-menu-list-item img:hover{
+    transform: scale(1.08);
+    box-shadow: 0px 14px 30px rgba(255,99,71,0.22);
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.explore-menu-list-item p{
+    margin-top: 14px;
+    color: #4b5563;
+    font-size: max(1.1vw,16px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.explore-menu-list-item:hover p{
+    color: tomato;
+}
+
+/* ========================= */
+/* ACTIVE ITEM */
+/* ========================= */
+
+.explore-menu-list-item .active{
+    border: 4px solid tomato;
+    padding: 3px;
+    box-shadow: 0px 0px 18px rgba(255,99,71,0.35);
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* HR */
+/* ========================= */
+
+.explore-menu hr{
+    margin: 18px 0px;
+    height: 2px;
+    background: linear-gradient(to right,#e5e7eb,transparent);
+    border: none;
+    border-radius: 20px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width:1050px){
+
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .explore-menu-list{
+        gap: 22px;
+    }
+
+    .explore-menu-list-item img{
+        min-width: 80px;
+    }
+}
+
+@media (max-width:750px){
+
+    .explore-menu{
+        gap: 22px;
+    }
+
+    .explore-menu h1{
+        font-size: 28px;
+    }
+
+    .explore-menu-text{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .explore-menu-list{
+        gap: 18px;
+    }
+
+    .explore-menu-list-item img{
+        min-width: 72px;
+    }
+
+    .explore-menu-list-item p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:500px){
+
+    .explore-menu h1{
+        font-size: 24px;
+    }
+
+    .explore-menu-list-item img{
+        min-width: 65px;
+    }
+
+    .explore-menu-text{
+        font-size: 13px;
+    }
+}

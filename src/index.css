@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* ========================= */
+/* GLOBAL RESET */
+/* ========================= */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+/* ========================= */
+/* ROOT */
+/* ========================= */
+
+#root{
+  min-height: 100vh;
+}
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========================= */
+/* APP CONTAINER */
+/* ========================= */
+
+.app{
+  width: 80%;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+/* ========================= */
+/* DARK MODE */
+/* ========================= */
+
+.dark{
+  background: #0f172a;
+  min-height: 100vh;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* NAVBAR */
+
+.dark .navbar{
+  background: rgba(15,23,42,0.92);
+  backdrop-filter: blur(14px);
+}
+
+/* CARDS & SECTIONS */
+
+.dark .food-item,
+.dark .cart-items,
+.dark .cart-total,
+.dark .cart-promocode,
+.dark .explore-menu,
+.dark .footer{
+  background: #1e293b;
+  color: white;
+  border-color: #334155;
+}
+
+/* TEXT */
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark p,
+.dark span,
+.dark a,
+.dark li{
+  color: white;
+}
+
+/* INPUTS */
+
+.dark input{
+  background: #273449;
+  color: white;
+  border: 1px solid #3a4b66;
+}
+
+.dark input::placeholder{
+  color: #cbd5e1;
+}
+
+/* BUTTONS */
+
+.dark button{
+  transition: 0.3s ease;
+}
+
+/* HORIZONTAL LINES */
+
+.dark hr{
+  background: #334155;
+}
+
+/* ========================= */
+/* SCROLLBAR */
+/* ========================= */
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background: tomato;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #ff5a36;
+}
+
+/* DARK SCROLLBAR */
+
+.dark ::-webkit-scrollbar-track{
+  background: #1e293b;
+}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+
+@keyframes fadeIn{
+
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp{
+
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

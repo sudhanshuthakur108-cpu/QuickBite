@@ -1,0 +1,94 @@
+.order-success{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    animation: fadeSuccess 0.5s ease;
+}
+
+@keyframes fadeSuccess{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.success-card{
+    background: white;
+    padding: 50px 40px;
+    border-radius: 28px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.08);
+}
+
+.success-check{
+    width: 95px;
+    height: 95px;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#22c55e,#16a34a);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    animation: pop 0.4s ease;
+}
+
+@keyframes pop{
+
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.success-card h1{
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.success-card p{
+    color: #666;
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.success-card button{
+    border: none;
+    padding: 16px 34px;
+    border-radius: 50px;
+    background: linear-gradient(135deg,tomato,#ff7a59);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0px 10px 24px rgba(255,99,71,0.28);
+}
+
+.success-card button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 14px 28px rgba(255,99,71,0.38);
+}

@@ -1,0 +1,96 @@
+.food-display{
+    margin-top: 50px;
+    padding: 10px 0;
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+.food-display h2{
+    font-size: max(2.2vw,28px);
+    font-weight: 700;
+    color: #1f2937;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.food-display h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 60%;
+    height: 4px;
+    border-radius: 50px;
+    background: linear-gradient(90deg,tomato,#ff8a65);
+}
+
+/* ========================= */
+/* FOOD GRID */
+/* ========================= */
+
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 40px;
+    gap: 28px;
+    row-gap: 40px;
+}
+
+/* ========================= */
+/* CARD EFFECT */
+/* ========================= */
+
+.food-display-list > *{
+    transition: all 0.35s ease;
+    border-radius: 20px;
+}
+
+.food-display-list > *:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 18px 40px rgba(0,0,0,0.12);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width:1050px){
+
+    .food-display-list{
+        gap: 22px;
+        row-gap: 35px;
+    }
+}
+
+@media (max-width:750px){
+
+    .food-display{
+        margin-top: 35px;
+    }
+
+    .food-display h2{
+        font-size: 28px;
+    }
+
+    .food-display-list{
+        grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+        gap: 18px;
+        row-gap: 25px;
+    }
+}
+
+@media (max-width:500px){
+
+    .food-display h2{
+        font-size: 24px;
+    }
+
+    .food-display-list{
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}

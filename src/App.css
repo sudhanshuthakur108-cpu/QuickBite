@@ -1,0 +1,152 @@
+/* ========================= */
+/* APP */
+/* ========================= */
+
+.app{
+    width: 80%;
+    margin: auto;
+    padding-top: 110px;
+    transition: all 0.3s ease;
+}
+
+/* ========================= */
+/* DARK MODE WRAPPER */
+/* ========================= */
+
+.dark-mode{
+    background: #0f172a;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* ========================= */
+/* TEXT COLORS */
+/* ========================= */
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode p,
+.dark-mode span,
+.dark-mode a,
+.dark-mode li,
+.dark-mode b{
+    color: #f8fafc;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.dark-mode .navbar{
+    background: rgba(15,23,42,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.dark-mode .navbar-menu a{
+    color: #e2e8f0;
+}
+
+.dark-mode .navbar-menu a:hover{
+    color: tomato;
+}
+
+.dark-mode .search-box input{
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: white;
+}
+
+.dark-mode .search-box input::placeholder{
+    color: #94a3b8;
+}
+
+.dark-mode .navbar button{
+    border: 1px solid #475569;
+    color: white;
+}
+
+/* ========================= */
+/* CARDS & SECTIONS */
+/* ========================= */
+
+.dark-mode .food-item,
+.dark-mode .cart-items,
+.dark-mode .cart-total,
+.dark-mode .cart-promocode,
+.dark-mode .explore-menu,
+.dark-mode .place-order-left,
+.dark-mode .place-order-right,
+.dark-mode .food-item-info{
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ========================= */
+/* INPUTS */
+/* ========================= */
+
+.dark-mode input{
+    background: #273449;
+    color: white;
+    border: 1px solid #3a4b66;
+}
+
+.dark-mode input::placeholder{
+    color: #94a3b8;
+}
+
+/* ========================= */
+/* HR */
+/* ========================= */
+
+.dark-mode hr{
+    background: #334155;
+}
+
+/* ========================= */
+/* FOOD ITEM */
+/* ========================= */
+
+.dark-mode .food-item-name-rating p{
+    color: white;
+}
+
+.dark-mode .food-item-desc{
+    color: #cbd5e1;
+}
+
+.dark-mode .food-item-price{
+    color: tomato;
+}
+
+/* ========================= */
+/* EXPLORE MENU */
+/* ========================= */
+
+.dark-mode .explore-menu-text{
+    color: #cbd5e1;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.dark-mode .footer{
+    background: #020617;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width:750px){
+
+    .app{
+        width: 92%;
+    }
+
+}
