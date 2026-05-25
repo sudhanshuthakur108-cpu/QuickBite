@@ -1,16 +1,97 @@
-# React + Vite
+# 🍔 QuickBite – Responsive Food Ordering Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+QuickBite is a modern and responsive food ordering web application built using React.js and Vite.
 
-Currently, two official plugins are available:
+Users can explore food items, search dishes, manage cart items, toggle dark/light mode, and place orders with a smooth UI experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://quick-bite-fooddelapp.netlify.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- 🔍 Search functionality
+- 🛒 Add to cart / remove from cart
+- ➕➖ Quantity controls
+- 🌙 Dark / Light mode
+- 📱 Fully responsive design
+- 💾 Cart persistence using localStorage
+- 🔔 Toast notifications
+- 🍔 Responsive Hamburger Navbar
+- 🔐 Login / Signup Authentication UI
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- Vite
+- JavaScript
+- CSS3
+- React Router DOM
+- Context API
+- React Toastify
+- Netlify
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+ ├── assets/
+ ├── components/
+ ├── context/
+ ├── pages/
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/sudhanshuthakur108-cpu/QuickBite.git
+```
+
+```bash
+cd QuickBite
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+---
+
+## 🎯 Future Improvements
+
+- Payment Gateway Integration
+- Backend Integration
+- Order History
+- Wishlist Feature
+- Admin Dashboard
+- Real Authentication System
+
+---
+
+## 👨‍💻 Author
+
+Sudhanshu Thakur
+
+- GitHub: https://github.com/sudhanshuthakur108-cpu
+
+---
+
+## ⭐ Support
+
+If you liked this project, give it a ⭐ on GitHub.
